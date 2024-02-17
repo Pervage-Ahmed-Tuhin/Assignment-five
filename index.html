@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -17,7 +17,117 @@
 
 <body>
 
+    <head>
 
+        <nav class="w-[1170px] flex justify-between items-center m-auto pt-12 font-Raleway">
+            <h1 class="font-extrabold text-4xl">Azure Travels</h1>
+
+            <div class="space-x-[56px] text-lg font-medium text-[#030712;]">
+                <a class="hover:text-gray-400" href="#">Home</a>
+                <a class="hover:text-gray-400" href="#">About</a>
+                <a class="hover:text-gray-400" href="#">Destination</a>
+                <a class="hover:text-gray-400" href="#">Search</a>
+            </div>
+
+            <div>
+                <button style="border: 1px solid rgba(29, 209, 0, 0.4);
+                border-radius: 12px;
+                background: rgba(29, 209, 0, 0.1);" class="btn btn-primary flex items-center"> <span
+                        class="text-[#1DD100;]">Bus</span> <img src="images/bus-icon.png" alt="pic of a bus"></button>
+            </div>
+
+
+        </nav>
+
+
+    </head>
+
+    <main>
+
+        <!-- This is the banner section -->
+        <section class="w-[1170px] m-auto bg-[url('images/banner.png')] bg-no-repeat h-[100vh] mt-12 relative">
+
+            <!-- inner content container -->
+            <div class="space-y-5 pt-32">
+                <h1 class="space-y-5 pb-5 text-center font-Raleway text-6xl font-extrabold text-white ">End-to-End
+                    Travel with
+                    <br>
+                    <span class="pl-[10%] text-[#1DD100;]">Azure Travels</span>
+                </h1>
+
+                <p class="font-inter text-white text-lg font-normal text-center">Yes, you can run unit tests and view
+                    the results directly within the app. <br> The integrated testing
+                    features allow for a streamlined .</p>
+
+                <!-- div for button -->
+
+                <div class="flex justify-center items-center">
+
+                    <button style="border-radius: 12px;
+                background: rgb(29, 209, 0);"
+                        class="w-44 h-16 text-black font-bold text-lg btn btn-primary border-none">
+                        Buy Tickets
+                    </button>
+                </div>
+            </div>
+
+
+            <!-- Cards section -->
+            <div class=" flex flex-1 justify-center gap-5 pt-16">
+                <!-- card 1 -->
+                <div style="box-sizing: border-box;
+                border-bottom: 3px solid rgb(29, 209, 0);
+                border-radius: 24px;
+                
+                background: rgb(255, 255, 255);" class="flex w-80 h-32 items-center justify-center gap-6">
+                    <img src="images/people.png" alt="">
+                   <div class="space-y-2">
+                    <h1 class="font-inter font-bold text-4xl">500K+</h1>
+                    <p class="font-inter font-normal text-lg text-gray-400">Registered users</p>
+                   </div>
+                </div>
+                <!-- End of card 1 -->
+                <!-- card 2 -->
+                <div style="box-sizing: border-box;
+                border-bottom: 3px solid rgb(29, 209, 0);
+                border-radius: 24px;
+                
+                background: rgb(255, 255, 255);" class="flex w-80 h-32 items-center justify-center gap-6">
+                    <img src="images/ticket-cupon.png" alt="">
+                   <div class="space-y-2">
+                    <h1 class="font-inter font-bold text-4xl">1.7 lacks</h1>
+                    <p class="font-inter font-normal text-lg text-gray-400">Tickets sold</p>
+                   </div>
+                </div>
+                <!-- End of card 2 -->
+                <!-- card 3 -->
+                <div style="box-sizing: border-box;
+                border-bottom: 3px solid rgb(29, 209, 0);
+                border-radius: 24px;
+                
+                background: rgb(255, 255, 255);" class="flex w-80 h-32 items-center justify-center gap-6">
+                    <img src="images/stoppage.png" alt="">
+                   <div class="space-y-2">
+                    <h1 class="font-inter font-bold text-4xl">80K+</h1>
+                    <p class="font-inter font-normal text-lg text-gray-400">Rental partners</p>
+                   </div>
+                </div>
+                <!-- End of card 3 -->
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <!-- End of card section -->
+        </section>
+        <!-- End of the banner section -->
+
+
+
+
+    </main>
 
 
     <script src="script/script.js"></script>
