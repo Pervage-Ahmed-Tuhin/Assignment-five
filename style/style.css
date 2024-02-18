@@ -30,3 +30,51 @@
 
     background: rgba(29, 209, 0, 0.15);
 }
+
+
+/* Seat design */
+
+.cards {
+    width: 110px;
+    height: 56px;
+    border-radius: 12px;
+    background: rgb(209, 212, 212);
+}
+
+/* input field coupon */
+
+.input-field-coupon {
+    width: 369px;
+    height: 56px;
+    border-radius: 12px;
+    background: rgb(240, 236, 236);
+    padding-left: 12px;
+}
+
+
+
+#button-apply {
+    border-radius: 8px;
+
+    background: rgb(29, 209, 0);
+}
+
+/* inputs */
+
+.local-inputs {
+    width: 369px;
+    height: 56px;
+    background: white;
+    padding-left: 12px;
+    border: 1px solid;
+    box-sizing: border-box;
+    border: 1px solid rgba(3, 7, 18, 0.1);
+    border-radius: 12px;
+
+}
+
+/* modal button */
+
+
+
+/* line */
