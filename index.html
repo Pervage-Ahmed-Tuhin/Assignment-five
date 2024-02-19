@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment-5</title>
+    <title>Azure Travels</title>
     <!-- Linking css -->
     <link rel="stylesheet" href="style/style.css">
 
@@ -12,6 +12,8 @@
 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="shortcut icon" href="images/ticket-cupon.png" type="image/x-icon">
 
 </head>
 
@@ -23,10 +25,10 @@
             <h1 class="font-extrabold text-4xl">Azure Travels</h1>
 
             <div class="space-x-[56px] text-lg font-medium text-[#030712;]">
-                <a class="hover:text-gray-400" href="#">Home</a>
-                <a class="hover:text-gray-400" href="#">About</a>
-                <a class="hover:text-gray-400" href="#">Destination</a>
-                <a class="hover:text-gray-400" href="#">Search</a>
+                <a class="hover:text-gray-400" href="index.html">Home</a>
+                <a class="hover:text-gray-400" href="index.html">About</a>
+                <a class="hover:text-gray-400" href="index.html">Destination</a>
+                <a class="hover:text-gray-400" href="index.html">Search</a>
             </div>
 
             <div>
@@ -236,7 +238,8 @@
 
                         <div class="w-44 h-14 seat-counter flex items-center gap-2">
                             <img src="images/seat-green.png" alt="">
-                            <p class="font-inter text-base font-medium text-[#1DD100]"> <span>28</span> Seats left</p>
+                            <p class="font-inter text-base font-medium text-[#1DD100]"> <span id="seat-left">28</span>
+                                Seats left</p>
                         </div>
                     </div>
                     <!-- end of seat left portion -->
@@ -343,29 +346,39 @@
                 <!-- Implementation of the seats  -->
                 <div class="space-y-5 pt-6">
 
+                    <!-- Driver button -->
+                    <div class="flex justify-end">
+                        <div class="card-driver flex items-center justify-center">
+                            <p class="flex items-center justify-center font-inter font-medium text-base text-gray-500">
+                                <img class="w-[40%]" src="images/steering-wheel.png" alt="">
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End of driver button -->
+
                     <!-- 1st row  -->
                     <div class="flex justify-between">
                         <div class="flex items-center gap-8">
                             <p class="font-inter font-medium text-base text-gray-500">A</p>
-                            <div class="cards flex items-center justify-center">
+                            <div id="A1" class="cards flex items-center justify-center">
                                 <p class="font-inter font-medium text-base text-gray-500">A1</p>
                             </div>
 
                         </div>
                         <div>
-                            <div class="cards flex items-center justify-center">
+                            <div id="A2" class="cards flex items-center justify-center">
                                 <p class="font-inter font-medium text-base text-gray-500">A2</p>
                             </div>
 
                         </div>
                         <div>
-                            <div class="cards flex items-center justify-center">
+                            <div id="A3" class="cards flex items-center justify-center">
                                 <p class="font-inter font-medium text-base text-gray-500">A3</p>
                             </div>
 
                         </div>
                         <div>
-                            <div class="cards flex items-center justify-center">
+                            <div id="A4" class="cards flex items-center justify-center">
                                 <p class="font-inter font-medium text-base text-gray-500">A4</p>
                             </div>
 
@@ -377,25 +390,25 @@
                     <div class="flex justify-between">
                         <div class="flex items-center gap-8">
                             <p class="font-inter font-medium text-base text-gray-500">B</p>
-                            <div class="cards flex items-center justify-center">
+                            <div id="B1" class="cards flex items-center justify-center">
                                 <p class="font-inter font-medium text-base text-gray-500">B1</p>
                             </div>
 
                         </div>
                         <div>
-                            <div class="cards flex items-center justify-center">
+                            <div id="B2" class="cards flex items-center justify-center">
                                 <p class="font-inter font-medium text-base text-gray-500">B2</p>
                             </div>
 
                         </div>
                         <div>
-                            <div class="cards flex items-center justify-center">
+                            <div id="B3" class="cards flex items-center justify-center">
                                 <p class="font-inter font-medium text-base text-gray-500">B3</p>
                             </div>
 
                         </div>
                         <div>
-                            <div class="cards flex items-center justify-center">
+                            <div id="B4" class="cards flex items-center justify-center">
                                 <p class="font-inter font-medium text-base text-gray-500">B4</p>
                             </div>
 
@@ -407,25 +420,25 @@
                     <div class="flex justify-between">
                         <div class="flex items-center gap-8">
                             <p class="font-inter font-medium text-base text-gray-500">C</p>
-                            <div class="cards flex items-center justify-center">
+                            <div id="C1" class="cards flex items-center justify-center">
                                 <p class="font-inter font-medium text-base text-gray-500">C1</p>
                             </div>
 
                         </div>
                         <div>
-                            <div class="cards flex items-center justify-center">
+                            <div id="C2" class="cards flex items-center justify-center">
                                 <p class="font-inter font-medium text-base text-gray-500">C2</p>
                             </div>
 
                         </div>
                         <div>
-                            <div class="cards flex items-center justify-center">
+                            <div id="C3" class="cards flex items-center justify-center">
                                 <p class="font-inter font-medium text-base text-gray-500">C3</p>
                             </div>
 
                         </div>
                         <div>
-                            <div class="cards flex items-center justify-center">
+                            <div id="C4" class="cards flex items-center justify-center">
                                 <p class="font-inter font-medium text-base text-gray-500">C4</p>
                             </div>
 
@@ -436,25 +449,25 @@
                     <div class="flex justify-between">
                         <div class="flex items-center gap-8">
                             <p class="font-inter font-medium text-base text-gray-500">D</p>
-                            <div class="cards flex items-center justify-center">
+                            <div id="D1" class="cards flex items-center justify-center">
                                 <p class="font-inter font-medium text-base text-gray-500">D1</p>
                             </div>
 
                         </div>
                         <div>
-                            <div class="cards flex items-center justify-center">
+                            <div id="D2" class="cards flex items-center justify-center">
                                 <p class="font-inter font-medium text-base text-gray-500">D2</p>
                             </div>
 
                         </div>
                         <div>
-                            <div class="cards flex items-center justify-center">
+                            <div id="D3" class="cards flex items-center justify-center">
                                 <p class="font-inter font-medium text-base text-gray-500">D3</p>
                             </div>
 
                         </div>
                         <div>
-                            <div class="cards flex items-center justify-center">
+                            <div id="D4" class="cards flex items-center justify-center">
                                 <p class="font-inter font-medium text-base text-gray-500">D4</p>
                             </div>
 
@@ -465,25 +478,25 @@
                     <div class="flex justify-between">
                         <div class="flex items-center gap-8">
                             <p class="font-inter font-medium text-base text-gray-500">E</p>
-                            <div class="cards flex items-center justify-center">
+                            <div id="E1" class="cards flex items-center justify-center">
                                 <p class="font-inter font-medium text-base text-gray-500">E1</p>
                             </div>
 
                         </div>
                         <div>
-                            <div class="cards flex items-center justify-center">
+                            <div id="E2" class="cards flex items-center justify-center">
                                 <p class="font-inter font-medium text-base text-gray-500">E2</p>
                             </div>
 
                         </div>
                         <div>
-                            <div class="cards flex items-center justify-center">
+                            <div id="E3" class="cards flex items-center justify-center">
                                 <p class="font-inter font-medium text-base text-gray-500">E3</p>
                             </div>
 
                         </div>
                         <div>
-                            <div class="cards flex items-center justify-center">
+                            <div id="E4" class="cards flex items-center justify-center">
                                 <p class="font-inter font-medium text-base text-gray-500">E4</p>
                             </div>
 
@@ -494,25 +507,25 @@
                     <div class="flex justify-between">
                         <div class="flex items-center gap-8">
                             <p class="font-inter font-medium text-base text-gray-500">F</p>
-                            <div class="cards flex items-center justify-center">
+                            <div id="F1" class="cards flex items-center justify-center">
                                 <p class="font-inter font-medium text-base text-gray-500">F1</p>
                             </div>
 
                         </div>
                         <div>
-                            <div class="cards flex items-center justify-center">
+                            <div id="F2" class="cards flex items-center justify-center">
                                 <p class="font-inter font-medium text-base text-gray-500">F2</p>
                             </div>
 
                         </div>
                         <div>
-                            <div class="cards flex items-center justify-center">
+                            <div id="F3" class="cards flex items-center justify-center">
                                 <p class="font-inter font-medium text-base text-gray-500">F3</p>
                             </div>
 
                         </div>
                         <div>
-                            <div class="cards flex items-center justify-center">
+                            <div id="F4" class="cards flex items-center justify-center">
                                 <p class="font-inter font-medium text-base text-gray-500">F4</p>
                             </div>
 
@@ -523,25 +536,25 @@
                     <div class="flex justify-between">
                         <div class="flex items-center gap-8">
                             <p class="font-inter font-medium text-base text-gray-500">G</p>
-                            <div class="cards flex items-center justify-center">
+                            <div id="G1" class="cards flex items-center justify-center">
                                 <p class="font-inter font-medium text-base text-gray-500">G1</p>
                             </div>
 
                         </div>
                         <div>
-                            <div class="cards flex items-center justify-center">
+                            <div id="G2" class="cards flex items-center justify-center">
                                 <p class="font-inter font-medium text-base text-gray-500">G2</p>
                             </div>
 
                         </div>
                         <div>
-                            <div class="cards flex items-center justify-center">
+                            <div id="G3" class="cards flex items-center justify-center">
                                 <p class="font-inter font-medium text-base text-gray-500">G3</p>
                             </div>
 
                         </div>
                         <div>
-                            <div class="cards flex items-center justify-center">
+                            <div id="G4" class="cards flex items-center justify-center">
                                 <p class="font-inter font-medium text-base text-gray-500">G4</p>
                             </div>
 
@@ -563,15 +576,16 @@
                 <hr style="border: 1px dashed rgba(3, 7, 18, 0.2);" class="">
 
                 <!-- Table section and total and grand total section -->
+                <!-- ml-4 -->
                 <div class="mb-6" style="border-radius: 12px;
                 background: rgb(247, 248, 248);">
-                    <table id="Table-Box" class="w-full space-y-4 mb-9">
-                        <th class="flex gap-6">
-                        <td class="font-inter font-medium text-base">Seat<span><sup
-                                    class="text-white rounded-full bg-[#1DD100]">0</sup></span></td>
-                        <td class="font-inter font-medium text-base">Class</td>
-                        <td class="font-inter font-medium text-base">Price</td>
-                        </th>
+                    <table id="Table-Box" class="w-[80%] space-y-4 mb-9">
+                        <tr class="text-center">
+                            <td class="font-inter font-medium text-base">Seat<span id="Seat-Selected-counter"
+                                    class="text-white rounded-lg bg-[#1DD100]  ml-4">0</span></td>
+                            <td class="font-inter font-medium text-base">Class</td>
+                            <td class="font-inter font-medium text-base">Price</td>
+                        </tr>
 
                     </table>
 
@@ -583,11 +597,12 @@
                     </div>
 
                     <!-- input for coupon -->
-                    <div class="text-center pb-5">
+                    <div id="apply-button-mother" class="text-center pb-5">
 
-                        <input class="input-field-coupon" type="text" placeholder="Have any copupon?">
+                        <input id="inputFieldInfo" class="input-field-coupon" type="text"
+                            placeholder="Have any copupon?">
 
-                        <button id="button-apply"
+                        <button onclick="grandTotalCoupon(event)" id="button-apply"
                             class="btn font-inter font-semibold text-base text-white relative right-24 ">
                             Apply
                         </button>
@@ -608,19 +623,20 @@
 
                 <!-- Bottom form section -->
 
-                <label class="font-inter font-semibold text-base" for="Passenger Name*">Passenger Name*</label>
-                <br>
-                <input class="local-inputs" type="text" name="" id="" placeholder="Enter Your Name:">
-                <br>
-                <label class="font-inter font-semibold text-base" for="phone NUmber*">Phone Number</label>
-                <br>
-                <input id="Phone-num-input" class="local-inputs" type="number" name="" id=""
-                    placeholder="Enter Your Phone Number:">
-                <br>
-                <label class="font-inter font-semibold text-base" for="Email ID">Email Id</label>
-                <br>
-                <input class="local-inputs" type="email" name="" id="" placeholder="Enter Your mail:">
+                <form action="">
+                    <label class="font-inter font-semibold text-base" for="Passenger Name*">Passenger Name*</label>
+                    <br>
+                    <input class="local-inputs" type="text" id="name" placeholder="Enter Your Name:">
+                    <br>
+                    <label class="font-inter font-semibold text-base" for="phone NUmber*">Phone Number</label>
+                    <br>
+                    <input id="Phone-num-input" class="local-inputs" type="text" placeholder="Enter Your Phone Number:">
+                    <br>
+                    <label class="font-inter font-semibold text-base" for="Email ID">Email Id</label>
+                    <br>
+                    <input class="local-inputs" type="email" id="Email" placeholder="Enter Your mail:">
 
+                </form>
                 <!-- This is the next button that will trigger a modal -->
 
                 <!-- You can open the modal using ID.showModal() method -->
@@ -649,7 +665,8 @@
                                 <form method="dialog" class="w-[333px]">
                                     <!-- if there is a button, it will close the modal -->
                                     <button onclick="modalContinue()" id="modal-continue-btn"
-                                        class="btn bg-[#27AE60] text-white w-full">Continue</button>
+                                        class="btn bg-[#27AE60] text-white w-full"><a class="text-3xl"
+                                            href="index.html">-------Continue------</a></button>
                                 </form>
                             </div>
                         </div>

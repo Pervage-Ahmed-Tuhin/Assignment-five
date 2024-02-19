@@ -41,6 +41,14 @@
     background: rgb(209, 212, 212);
 }
 
+
+.card-driver {
+    width: 110px;
+    height: 56px;
+    border-radius: 12px;
+    background: rgb(209, 212, 212);
+}
+
 /* input field coupon */
 
 .input-field-coupon {
@@ -83,3 +91,11 @@
 
 
 /* line */
+
+
+
+/* disabled button */
+
+[disabled-clicks = "true"]{
+    pointer-events: none;
+}
