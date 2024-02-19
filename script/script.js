@@ -4,6 +4,7 @@ let countInner = 1
 const modalGoingButton = document.getElementById('Next-button-to-get-modal');
 let totalPrice = 0;
 
+
 function innerSection() {
     const value2 = document.getElementById('offer-section');
     value2.classList.add('hidden');
@@ -112,7 +113,7 @@ function tableUpdater(textValue, counterSit) {
     const td1 = document.createElement('td');
     const td2 = document.createElement('td');
     const td3 = document.createElement('td');
-    td1.innerText = counterSit;
+    td1.innerText = textValue;
     td2.innerText = "Economy Class";
     td3.innerText = "550Tk";
 
